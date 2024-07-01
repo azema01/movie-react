@@ -1,0 +1,49 @@
+.dods {
+    display: flex;
+    align-items: flex-end;
+    gap: 15px;
+    height: 33px;
+}
+
+.dods>div {
+    width: 2px;
+    height: 20px;
+    background-color: red;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: height ease 0.3s;
+}
+
+.dods>div.active {
+    height: 33px;
+    background-color: green;
+}
+
+
+.container {
+    position: relative;
+}
+
+.nav-button {
+    font-size: 33px;
+    color: white;
+    background: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.nav-button.left {
+    left: 0;
+}
+
+.nav-button.right {
+    right: 0;
+    font-size: 44px;
+}
+
+.play-button{
+    margin-left: 10px;
+}
