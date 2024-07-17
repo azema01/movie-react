@@ -8,16 +8,29 @@ export const fetchMovieById = createAsyncThunk(
         console.log("dsd");
         const { data } = await movieApi.getMovieById(id);
         console.log(data, ' data ')
+        const {data: trailerData} = await movieApi.getMovieTrailer(data.id)
+        const keys = trailerData.results.map( film => film.key)
+        console.log(keys);
+        return {
+            data,
+            keys
+        }
     }
 );
 
-const movieSlise = createSlice({
+const movieSlice = createSlice({
     name: 'movie',
     initialState: {
-        date: []
+        data: [],
+        keys: []
     },
     reducers: {},
-    extraReducers: (builder) => { }
+    extraReducers: (builder) => {
+        builder.addCase(fetchMovieById.fulfilled, (state, {payload}) =>{
+            state.data = payload.data
+            state.keys = payload.keys
+        })
+     }
 })
 
-export const movieReducer = movieSlise.reducer;
+export const movieReducer = movieSlice.reducer;

@@ -1,0 +1,56 @@
+.hero2-block {
+    height: 65px;
+    background: #1A1A1A;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: red;
+}
+
+.hero2-card {
+    width: 225px;
+    height: 372px;
+    position: relative;
+    margin-top: 50px;
+}
+
+.hero2-h5 {
+
+    margin-left: 10px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.hero2-p {
+    margin-top: -30px;
+    margin-left: 10px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.reiting {
+    width: 35px;
+    height: 35px;
+    left: 19px;
+    border-radius: 0px 0px 5px 5px;
+    background: red;
+    position: absolute;
+    text-align: center;
+}
+
+.reiting-p {
+    color: #fff;
+    margin-top: 10px;
+}
+
+.hero2-sl{
+    display: flex;
+    justify-content: space-between;
+}

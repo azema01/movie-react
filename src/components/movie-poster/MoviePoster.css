@@ -1,0 +1,59 @@
+.movie-poster{
+    padding-top: 120px;
+    padding-bottom: 150px;
+    margin-bottom: -900px;
+}
+.Container{
+    padding: 0px !important;
+}
+
+.background-image {
+    width: 1440px;
+    height: 720px;
+    position: relative;
+    margin-top: -115px;
+    background-size: cover;
+    background-position: center;
+    margin-left: -120px;
+}
+
+.content {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6); 
+    padding: 20px; 
+    box-sizing: border-box; 
+    color: #ffffff;
+    margin-left: 100px;
+}
+
+.block-1 {
+    width: 300px;
+    height: 450;
+    display: block;
+    margin-left: 150px;
+}
+
+.text-content {
+    margin-top: 20px;
+}
+
+.text-h2 {
+    font-size: 24px; 
+    margin-bottom: 10px;
+}
+
+.text-info {
+    margin-bottom: 10px; 
+}
+
+.text-p {
+    display: inline-block;
+    margin-right: 10px; 
+    font-size: 14px; 
+}
+
+.block-p {
+    margin-top: 20px; 
+    font-size: 16px;
+    line-height: 1.5; 
+}

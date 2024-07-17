@@ -1,9 +1,13 @@
 .container-trailers {
- 
-}
+    padding-top: 120px;
+    padding-bottom: 150px;
+    background-color: #131416;
+    margin-top: 750px;
 
+}
 .trailers{
    color: aliceblue;
+
 }
 
 .cocmos{
@@ -11,3 +15,8 @@
     gap: 30px;
     margin-top: 50px;
 }
+/* 
+.Slider{
+    display: flex;
+    gap: 10px;
+} */

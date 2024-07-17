@@ -1,0 +1,55 @@
+
+
+.Inte {
+    width: 880px;
+    height: 560px;
+    border-radius: 10px 10px 10px 10px;
+    background: #1A1A1A;
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-bottom: 200px;
+}
+
+.Inte-h3 {
+    color: #fff;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 43.88px;
+    text-align: left;
+    width: 400px;
+    height: 44px;
+    margin-left: 300px;
+    padding-top: 170px;
+}
+
+.p1 {
+    color: #EF4234;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19.5px;
+    width: 380px;
+    height: 20px;
+    margin-left: 300px;
+}
+
+.inte-p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28.54px;
+    text-align: left;
+    width: 442px;
+    height: 87px;
+    color: #FFFFFF;
+    margin-left: 300px;
+
+}
+
+.Inte-img {
+    position: absolute;
+    width: 300px;
+    height: 450px;
+    border-radius: 10px 10px 10px 10px;
+    /* z-index: 10px; */
+    margin-top: 60px;
+    margin-left: 100px;
+}

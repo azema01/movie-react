@@ -1,30 +1,45 @@
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import './MovieInfo.css';
-import Fon from "../../assets/png/fon.png";
-import Block from "../../assets/png/block-1.png";
-import MoviePoster from '../../components/movie-poster/MoviePoster';
 import MovieTrailers from '../../components/movie-trailers/MovieTrailers';
-import { useDispatch, useSelector } from "react-redux"
-import { fetchMovieById } from "../../redux/slice/movieSlice"
+import { useDispatch, useSelector } from "react-redux";
+import { fetchMovieById } from "../../redux/slice/movieSlice";
 import { useParams } from 'react-router-dom';
+import MoviePoster from '../../components/movie-poster/MoviePoster';
+
 
 const MovieInfo = () => {
-    const { id } = useParams()
-    const dispatch = useDispatch()
+    const { id } = useParams();
+    const dispatch = useDispatch();
+    const { data, loading, error } = useSelector(state => state.movie);
 
     useEffect(() => {
-        dispatch(fetchMovieById(id))
-    }, [])
+        dispatch(fetchMovieById(id));
+    }, [dispatch, id]);
+
+    if (loading) {
+        return <div>Загрузка...</div>;
+    }
+
+    if (error) {
+        return <div>Ошибка при загрузке данных фильма</div>;
+    }
 
     return (
-
         <div className='container-movie'>
-               
-            <MoviePoster Fon={Fon} Block={Block} />
+            {data && (
+                <MoviePoster 
+                    data={data} 
+                    overview={data.overview} 
+                    release_date={data.release_date}
+                    year={data.year}
+                    origin_country={data.origin_country}
+                    genres={data.genres}
+                    />
+                
+            )}
             <MovieTrailers />
         </div>
     );
 }
 
 export default MovieInfo;
-

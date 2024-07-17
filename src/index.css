@@ -1,10 +1,7 @@
 .footer {
   background-color: #333;
   color: #fff;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 0px !important;
 }
 
 .footer-block {
@@ -43,8 +40,12 @@
 
 .footer-icons {
   display: flex;
+  justify-content: end;
   gap: 10px;
-  align-items: center;
+  margin-right: 200px;
+  margin-top: -90px;
+  
+
 }
 
 .phone {
@@ -59,10 +60,23 @@
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  /* делаем background круглым */
 }
 
+.footer-button {
+  margin-left: 850px;
+  width: 150px;
+  height: 33px;
+  padding: 5px 20px 5px 20px;
+  border-radius: 36px 36px 36px 36px;
+  color: #fff;
+  background: #EF4234;
+}
+.footer-button1{
+  margin-top: 10px;
+  margin-left: 10px;
 
+ 
+}
 .container {
   max-width: 1600px;
   margin: auto;
@@ -70,6 +84,5 @@
 }
 
 .MuiContainer-maxWidthLg {
-  border: 1px solid red !important;
   padding: 0px !important;
 }
